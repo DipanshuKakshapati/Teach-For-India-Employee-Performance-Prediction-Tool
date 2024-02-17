@@ -5,4 +5,3 @@
 
 ![Profile View Counter](https://komarev.com/ghpvc/?username=DipanshuKakshapati)
 
-![Hits](https://hitcounter.pythonanywhere.com/count/tag.svg?url=https://github.com/DipanshuKakshapati/Predict_Performance_of_Employees_TFI/tree/test?tab=readme-ov-file)
