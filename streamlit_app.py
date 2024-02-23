@@ -3,7 +3,9 @@ import pandas as pd
 import pickle
 
 # Load your trained model
-model = pickle.load(open('employee_performance_prediction_model.pkl', 'rb'))
+model_data = pickle.load(open('employee_performance_prediction_model.pkl', 'rb'))
+model = model_data['model']
+model_accuracy = model_data['accuracy']
 
 st.title('Employee Performance Prediction Form')
 
@@ -43,3 +45,4 @@ if st.button('Predict Performance'):
     prediction = model.predict(input_df)
     output = 'High Performance' if prediction[0] == 1 else 'Low Performance'
     st.write('Employee Performance Prediction: ', output)
+    st.write(f'Model Accuracy: {model_accuracy*100:.2f}%')
