@@ -6,22 +6,41 @@ import pickle
 model_data = pickle.load(open('employee_performance_prediction_model.pkl', 'rb'))
 model = model_data['model']
 model_accuracy = model_data['accuracy']
+# Assuming 'logo.png' is the path to your logo image file
+st.sidebar.image('logo.png', use_column_width=True)
 
-st.title('Employee Performance Prediction Form')
+# Using columns to create a layout for logo next to the title
+col1, col2 = st.beta_columns([1, 8])
 
-# Creating input widgets
-department = st.selectbox('Department', ['Sales & Marketing', 'Operations', 'Procurement', 'Technology', 'Analytics', 'Finance', 'HR', 'R&D', 'Legal'])
-no_of_trainings = st.number_input('Number of Trainings', min_value=1, max_value=5, value=1, step=1)
+with col1:
+    # Display logo in the first column
+    st.image('logo.png', width=100)
+
+with col2:
+    # Display the title in the second column
+    st.title('Employee Performance Prediction Form')
+
+# Replace selectbox with st.radio
+department = st.selectbox('Select your department', ['Sales & Marketing', 'Operations', 'Procurement', 'Technology', 'Analytics', 'Finance', 'HR', 'R&D', 'Legal'])
+
+# Rest of your st.radio widgets replacing selectbox...
+education = st.selectbox('Select your education status', ["Bachelor's", "Master's & above", "Below Secondary", "Others"])
+gender = st.radio('Gender', ['Male', 'Female'])
+recruitment_channel = st.selectbox('Select your recruitment channel', ['Other', 'Sourcing', 'Referred'])
+awards_won = st.radio('Awards Won', [0, 1])
+
+# Replace number_input with st.slider
+no_of_trainings = st.slider('Number of Trainings', 1, 5, 1)
+
 region_options = [f'region_{i}' for i in range(1, 35)]
 region = st.selectbox('Region', options=region_options)
+
 education = st.selectbox('Education', ["Bachelor's", "Master's & above", "Below Secondary", "Others"])
-gender = st.selectbox('Gender', ['Male', 'Female'])
-recruitment_channel = st.selectbox('Recruitment Channel', ['Other', 'Sourcing', 'Referred'])
-age = st.number_input('Age', min_value=20, max_value=60, value=20, step=1)
-previous_year_rating = st.number_input('Previous Year Rating', min_value=1, max_value=5, value=1, step=1)
-length_of_service = st.number_input('Length of Service', min_value=1, max_value=32, value=1, step=1)
-awards_won = st.selectbox('Awards Won', [0, 1])
-avg_training_score = st.number_input('Average Training Score', min_value=1, max_value=100, value=1, step=1)
+
+age = st.slider('Age', 20, 60, 20)
+previous_year_rating = st.slider('Previous Year Rating', 1, 5, 1)
+length_of_service = st.slider('Length of Service', 1, 32, 1)
+avg_training_score = st.slider('Average Training Score', 1, 100, 1)
 
 # Processing the prediction when the user changes any input
 input_data = {
@@ -42,7 +61,17 @@ input_df = pd.DataFrame.from_dict(input_data)
 
 # Display button and make prediction
 if st.button('Predict Performance'):
-    prediction = model.predict(input_df)
+    # Show a loading animation using an animated GIF
+    with st.spinner('Predicting...'):
+        # Simulate a time-consuming task
+        time.sleep(2)
+        prediction = model.predict(input_df)
+    
+    # After prediction, display the result with a color theme
     output = 'High Performance' if prediction[0] == 1 else 'Low Performance'
-    st.write('Employee Performance Prediction: ', output)
-    st.write(f'Model Accuracy: {model_accuracy*100:.2f}%')
+    if output == 'High Performance':
+        st.markdown(f"<h1 style='color:green;'>{output}</h1>", unsafe_allow_html=True)
+        st.write(f'Model Accuracy: {model_accuracy*100:.2f}%')
+    else:
+        st.markdown(f"<h1 style='color:red;'>{output}</h1>", unsafe_allow_html=True)
+        st.write(f'Model Accuracy: {model_accuracy*100:.2f}%')
