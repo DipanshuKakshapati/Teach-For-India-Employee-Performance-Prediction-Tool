@@ -21,6 +21,8 @@ st.sidebar.markdown("""
 
 st.title('Employee Performance Prediction Form')
 
+st.image('logo.png')
+
 st.write("""
 This is a Python created an HR analytics tool that can help a talent management team in Teach For India predict employee performance and plan for their growth.
 """)
