@@ -155,6 +155,11 @@ if st.button('Predict Performance'):
     if output == 'High Performance':
         st.markdown(f"<h1 style='color:green;'>{output}</h1>", unsafe_allow_html=True)
         st.write(f'Model Accuracy: {model_accuracy*100:.2f}%')
+
+        st.balloons()
+
     else:
         st.markdown(f"<h1 style='color:red;'>{output}</h1>", unsafe_allow_html=True)
         st.write(f'Model Accuracy: {model_accuracy*100:.2f}%')
+
+        st.balloons()
