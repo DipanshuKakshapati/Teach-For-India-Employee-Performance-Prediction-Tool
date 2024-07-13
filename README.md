@@ -1,7 +1,12 @@
-# Predict_Performance_of_Employees_TFI
-![Your Repository's Stats](https://github-readme-stats.vercel.app/api?username=DipanshuKakshapati&show_icons=true)
+• Engineered a robust predictive analytics model to forecast employee performance, leveraging a
+a dataset comprising extensive historical data on employee evaluations.
 
-![Your Repository's Stats](https://github-readme-stats.vercel.app/api/top-langs/?username=DipanshuKakshapati&theme=blue-green)
+• Formulated a multifaceted employee performance prediction model, integrating quantitative
+and qualitative indicators for comprehensive analysis.
 
-![Profile View Counter](https://komarev.com/ghpvc/?username=DipanshuKakshapati)
+• Compiled an in-depth research report delineating the methodologies and efficacy of various
+employee performance prediction models, underscoring the potential for HR analytics in
+strategic talent management.
 
+• Presented data-informed recommendations for talent development initiatives, aiming to boost
+productivity and employee growth trajectories
