@@ -11,3 +11,6 @@ strategic talent management.
 • Presented data-informed recommendations for talent development initiatives, aiming to boost
 productivity and employee growth trajectories
 
+### Shots of my live prediction model
+https://github.com/DipanshuKakshapati/Teach-For-India-Employee-Performance-Prediction-Tool/blob/5ca18f887369a5f044ef24ae4264c74972f1dfec/assets/pic_1.png
+
