@@ -14,11 +14,12 @@ strategic talent management.
 productivity and employee growth trajectories
 
 ### Shots of my live prediction model
-![Image 1](https://github.com/DipanshuKakshapati/Teach-For-India-Employee-Performance-Prediction-Tool/blob/5ca18f887369a5f044ef24ae4264c74972f1dfec/assets/pic_1.png?raw=true)
+![Image 1](https://github.com/DipanshuKakshapati/Teach-For-India-Employee-Performance-Prediction-Tool/blob/59c6d351c63baefda584e66b183550a971ea9a03/assets/pic_1.png?raw=true)
 
-![Image 2](https://github.com/DipanshuKakshapati/Teach-For-India-Employee-Performance-Prediction-Tool/blob/abebc789d917c4668f8b19d8c29c0b203fa16255/assets/pic_2.png?raw=true)
+![Image 2](https://github.com/DipanshuKakshapati/Teach-For-India-Employee-Performance-Prediction-Tool/blob/59c6d351c63baefda584e66b183550a971ea9a03/assets/pic_2.png?raw=true)
 
-![Image 3](https://github.com/DipanshuKakshapati/Teach-For-India-Employee-Performance-Prediction-Tool/blob/abebc789d917c4668f8b19d8c29c0b203fa16255/assets/pic_3.png?raw=true)
+![Image 3](https://github.com/DipanshuKakshapati/Teach-For-India-Employee-Performance-Prediction-Tool/blob/59c6d351c63baefda584e66b183550a971ea9a03/assets/pic_3.png?raw=true)
 
+![Image 4](https://github.com/DipanshuKakshapati/Teach-For-India-Employee-Performance-Prediction-Tool/blob/59c6d351c63baefda584e66b183550a971ea9a03/assets/pic_4.png?raw=true)
 
 
