@@ -10,3 +10,4 @@ strategic talent management.
 
 • Presented data-informed recommendations for talent development initiatives, aiming to boost
 productivity and employee growth trajectories
+
